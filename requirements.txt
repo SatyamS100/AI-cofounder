@@ -1,0 +1,9 @@
+groq
+tavily-python
+langgraph
+chromadb
+sentence-transformers
+streamlit
+plotly
+python-dotenv
+requests

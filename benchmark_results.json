@@ -1,0 +1,18 @@
+{
+  "sequential_total_s": 21.37,
+  "parallel_total_s": 51.98,
+  "cached_total_s": 38.96,
+  "speedup_x": 0.41,
+  "pct_time_saved": -143.3,
+  "cache_speedup_x": 1.33,
+  "per_agent_sequential_s": {
+    "pitch_refiner": 1.4,
+    "market_intelligence": 0.06,
+    "problem_validator": 13.35,
+    "technical_feasibility": 0.54,
+    "accelerator_fit": 0.73,
+    "user_personas": 1.43,
+    "devils_advocate": 0.84,
+    "vc_final_call": 3.03
+  }
+}

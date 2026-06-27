@@ -1,0 +1,21 @@
+# docker-compose.yml
+# Provides: env injection, ChromaDB volume persistence, port mapping.
+# Usage:
+#   docker compose up --build      # first run
+#   docker compose up              # subsequent runs (uses cached image)
+#   docker compose down            # stop (chroma_data volume persists)
+#   docker compose down -v         # stop AND wipe the ChromaDB volume
+
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env                        # injects ANTHROPIC_API_KEY from your .env
+    volumes:
+      - chroma_data:/app/chroma_db  # ChromaDB survives container restarts
+    restart: unless-stopped
+
+volumes:
+  chroma_data:

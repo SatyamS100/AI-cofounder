@@ -1,0 +1,18 @@
+# Secrets — never commit your real API key
+.env
+
+# Local ChromaDB persistence (the RAG knowledge base + pitch analysis cache)
+# This is regenerated automatically on first run via seed_accelerator_knowledge()
+chroma_db/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
