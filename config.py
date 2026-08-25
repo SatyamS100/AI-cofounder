@@ -15,7 +15,7 @@ instead of a hunt through 8 agent functions.
 # ─────────────────────────────────────────────────────────────────────────
 # MODEL CONFIG
 # ─────────────────────────────────────────────────────────────────────────
-MODEL_NAME = "llama-3.3-70b-versatile"
+MODEL_NAME = "openai/gpt-oss-120b"   # llama-3.3-70b-versatile was retired by Groq Aug 2026
 
 # Per-agent max_tokens. Kept modest (1500) because every agent returns a
 # single structured JSON object, not free-form prose — there's no reason to
