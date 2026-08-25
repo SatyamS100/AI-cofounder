@@ -118,7 +118,8 @@ def render_agent_card(node_name: str, node_output: dict):
     result_key = next((k for k in node_output if k != "stage"), None)
     result = node_output.get(result_key) if result_key else None
 
-    with st.expander(f"**{display_name}**", expanded=False):
+    with st.container(border=True):
+        st.markdown(f"#### 📌 {display_name}")
         if result is None:
             st.info("No data returned for this stage.")
             return
