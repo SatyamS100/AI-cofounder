@@ -25,6 +25,9 @@ into what search results the model is reasoning over."
 """
 
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 from tavily import TavilyClient
 
 # Initialize once at module level — same pattern as the LLM client

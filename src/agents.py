@@ -44,6 +44,9 @@ from src.rag import (
     store_pitch_analysis,
 )
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # ─── GROQ CLIENT ──────────────────────────────────────────────────────────────
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 

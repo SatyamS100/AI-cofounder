@@ -31,6 +31,9 @@ updates independently of when its sibling nodes finish.
 """
 
 import json
+from dotenv import load_dotenv
+load_dotenv()   # must happen before any import that initializes the Groq/Tavily clients
+
 import streamlit as st
 
 from src.graph import venture_graph
